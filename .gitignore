@@ -1,0 +1,18 @@
+# 模型/权重文件不要传进仓库（太大，用 models.txt 登记下载地址即可）
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.bin
+*.onnx
+*.gguf
+
+# 输出结果、缓存
+outputs/
+output/
+__pycache__/
+*.pyc
+.DS_Store
+
+# 万一手滑把ComfyUI本体clone进了仓库目录，避免误传
+ComfyUI/

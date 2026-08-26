@@ -1,0 +1,29 @@
+# ============================================================
+# 自定义节点清单
+# 每行一个 git 仓库地址，install_custom_nodes.sh 会依次 clone 并安装依赖
+# 以 # 开头的行会被忽略
+# 下面先给出制作"AI漫剧"（图生图/文生图角色与分镜 + 图生视频 + 语音）常用的一批，
+# 你可以按需删掉不用的，或追加别的
+# ============================================================
+
+# 节点管理器（setup.sh 里已单独处理，这里不用重复写）
+
+# 视频生成相关（图生视频/帧插值，用于让分镜"动起来"）
+https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite.git
+https://github.com/kijai/ComfyUI-AnimateDiff-Evolved.git
+https://github.com/Fannovel16/ComfyUI-Frame-Interpolation.git
+
+# 姿态/控制类（保证角色形象一致、动作可控，做漫剧分镜常用）
+https://github.com/Fannovel16/comfyui_controlnet_aux.git
+
+# 人物一致性 / 换脸类（保持同一角色多分镜形象统一，可按需保留）
+https://github.com/cubiq/ComfyUI_IPAdapter_plus.git
+https://github.com/Gourieff/ComfyUI-ReActor.git
+
+# 语音/配音（TTS，做漫剧对白配音）
+https://github.com/AIFSH/ComfyUI-IndexTTS.git
+
+# 实用工具节点（图像处理、逻辑控制等，几乎所有workflow都会用到）
+https://github.com/ltdrdata/ComfyUI-Impact-Pack.git
+https://github.com/rgthree/rgthree-comfy.git
+https://github.com/WASasquatch/was-node-suite-comfyui.git

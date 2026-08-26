@@ -1,0 +1,16 @@
+# ============================================================
+# 模型下载清单
+# 每行格式: <下载URL>  <相对 models/ 的目标子路径（含文件名）>
+# 常见子目录: checkpoints/ loras/ vae/ controlnet/ ipadapter/ animatediff_models/ upscale_models/
+#
+# 模型文件很大，不要传进git仓库，只在这里登记下载地址，
+# 由 scripts/download_models.sh 在GPU实例上直接下载。
+#
+# 示例（请替换成你实际要用的模型，先去HuggingFace/Civitai/魔搭找好链接）：
+# https://huggingface.co/xxx/resolve/main/xxx.safetensors   checkpoints/xxx.safetensors
+# https://huggingface.co/xxx/resolve/main/control_xxx.pth   controlnet/control_xxx.pth
+#
+# 国内网络访问HuggingFace可能较慢，可以：
+#  1) 用 hf-mirror.com 替换 huggingface.co
+#  2) 或改用 modelscope（魔搭）的下载地址
+# ============================================================
